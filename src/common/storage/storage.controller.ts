@@ -28,7 +28,7 @@ export class FileController {
         destination: './uploads',
         filename: fileRename,
       }),
-      fileFilter: imageFileFilter,
+      // fileFilter: imageFileFilter,
     }),
   )
   @Bind(UploadedFile())

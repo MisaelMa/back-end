@@ -13,6 +13,7 @@ import { ConfigService } from '../common/config/config.service';
 import { Configuration } from '../common/config/config.keys';
 // Config
 import { RequestQueryBuilder } from '@nestjsx/crud-request';
+import {SystemModule} from "../system/system.module";
 
 @Module({
   imports: [
@@ -21,7 +22,8 @@ import { RequestQueryBuilder } from '@nestjsx/crud-request';
     ProfileModule,
     RoleModule,
     AuthModule,
-    StorageModule
+    StorageModule,
+    SystemModule
   ],
 })
 export class AppModule {

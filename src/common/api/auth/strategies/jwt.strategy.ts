@@ -23,12 +23,12 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   public async validate(ijwt: IJwt) {
-    const { email } = ijwt;
-    const user = await this.repository.findOne({ where: { email } });
-
-    if (!user) {
-      throw new UnauthorizedException();
-    }
+    // const { email } = ijwt;
+    // const user = await this.repository.findOne({ where: { email } });
+    //
+    // if (!user) {
+    //   throw new UnauthorizedException();
+    // }
 
     return ijwt;
   }
